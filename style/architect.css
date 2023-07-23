@@ -11,6 +11,9 @@ body{
     color: white;
     border: 0;
     padding: 20px 24px;
+    font-size: 1.25rem;
+    font-weight: 600;
+     cursor: pointer;
 }
 /* header section styles */
 header{
@@ -42,7 +45,7 @@ nav li a{
 }
 /* banner-section styles */
 .banner-content{
-    max-width: 875px;
+    max-width: 800px;
     text-align: center;
     margin: 0 auto;
 }
@@ -59,4 +62,20 @@ nav li a{
 }
 .banner-description{
     color: #727272;
+}
+/* responsive styles */
+/* mobile devices */
+@media screen and (max-width:576px) {
+        header{
+             padding:10px;
+        }
+        nav{
+             flex-direction: column;
+        }
+}
+/* medium device or tablet */
+@media screen and (min-width:576px) and (max-width:960px) {
+    header{
+        padding:10px;
+   }
 }
