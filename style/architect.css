@@ -98,6 +98,33 @@ main{
     color: #FF900E;
     font-weight: 700;
    }
+
+   /* features styles */
+   .features-container{
+        display: flex;
+        gap: 126px;
+        margin-top: 120px;
+        padding: 0 40px;
+   }
+   .features-img{
+      width:50%;
+   }
+   .features-card{
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding:15px;
+    margin-bottom: 20px;
+   }
+   .features-card h4{
+    font-size: 20px;
+    font-weight: 600;
+   }
+   #features-title{
+      border-left: 5px solid #FF900E;
+      padding-left: 20px ;
+   }
+
   /* facts-card styles */
 .facts-card-container{
     display: flex;
