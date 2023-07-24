@@ -112,7 +112,7 @@ main{
    .features-card{
     border-radius: 8px;
     background: #FFF;
-    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 4px 30px 8px rgba(0, 0, 0, 0.06);
     padding:15px;
     margin-bottom: 20px;
    }
@@ -124,6 +124,30 @@ main{
       border-left: 5px solid #FF900E;
       padding-left: 20px ;
    }
+   .features-img img{
+     height: 90%;
+     margin-left: 90px;
+   }
+   .years-badge{
+    border-radius: 8px;
+    background: #FF900E;
+    width: 332px;
+    color: #FFF;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 110px;
+    right:60px;
+
+   }
+   .years-badge h2{
+     font-size:65px;
+     margin: 0;
+   }
+   .years-badge p{
+    font-size: 24px;
+   }
+
 
   /* facts-card styles */
 .facts-card-container{
@@ -165,7 +189,8 @@ main{
     gap: 50px;
 }
 
-  
+/* footer styles */
+
 
 
 
@@ -180,7 +205,7 @@ main{
         header{
              padding:10px;
         }
-        nav, .teams-container, .facts-card-container, .sponsors-img-container{
+        nav, .teams-container, .facts-card-container, .sponsors-img-container, .features-container{
              flex-direction: column;
         }
         .teams-container-img{
@@ -195,20 +220,36 @@ main{
         } 
         .facts-card-container .card{
             gap: 30px;
-            padding-left: 5px;
-            padding-right: 5px;
+            padding-left: 0;
+            padding-right: 0;
         }
-        
+        .features-img{
+            width: 100%;
+        }
+        .features-img  img{
+            height:90%;
+            width: 100%;
+            margin-left: 0;
+            
+        }
+        .years-badge{
+            position: relative;
+            max-width: 250px;
+            margin-left:20px;
+        }
 }
 /* medium device or tablet */
 @media screen and (min-width:576px) and (max-width:960px) {
     header{
         padding:10px;
    }
-   .teams-container, .sponsors-img-container{
+   .teams-container, .sponsors-img-container, .features-container{
     flex-direction: column;
   }
   .teams-container-img{
      grid-template-columns: repeat(1,1fr);
+  }
+  .years-badge{
+     right: 0;
   }
 }
