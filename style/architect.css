@@ -26,12 +26,13 @@ body{
 /* header section styles */
 header{
     background: rgba(255, 144, 14, 0.10);
-    padding: 40px 240px;
+    /* padding: 20px 240px; */
 }
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 50px;
 }
 nav> ul{
      display: flex;
@@ -47,6 +48,9 @@ nav li a{
     color: #424242;
 }
 /* banner-section styles */
+ .banner{
+    padding:0 240px 30px 240px;
+ }
 .banner-content{
     max-width: 800px;
     text-align: center;
@@ -190,19 +194,23 @@ main{
 }
 
 /* footer styles */
-
-
-
-
-
-
-
+footer{
+    border-radius: 8px;
+    background: #FFF4E7;
+    text-align: center;
+    padding:35px 0;
+    margin: 30px;
+}
+footer p{
+    font-size: 20px;
+    color:#424242
+}
 
 
 /* responsive styles */
 /* mobile devices */
 @media screen and (max-width:576px) {
-        header{
+        header,.banner{
              padding:10px;
         }
         nav, .teams-container, .facts-card-container, .sponsors-img-container, .features-container{
@@ -251,5 +259,11 @@ main{
   }
   .years-badge{
      right: 0;
+  }
+  .features-img{
+     width: 90%;
+  }
+  .features-img>img{
+    width: 100%;
   }
 }
